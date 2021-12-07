@@ -1,0 +1,333 @@
+/*INDEX*/
+
+/*Reseteo CSS*/
+
+*{
+
+    margin: 0;
+  
+    padding: 0;
+  
+    box-sizing: border-box;
+  
+  }
+
+
+.principal{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: auto auto auto;
+    grid-gap: 0;
+    margin: 0px;
+    grid-template-rows: 63px 525px 180px auto 70px;
+    grid-template-areas: 
+    "nav nav nav" 
+    "main main main"
+    "general general general"
+    "row row row"
+    "foot foot foot";
+
+   
+}
+
+
+/*NAVBAR*/
+
+/*FUENTE*/
+
+
+
+.logo{
+    width: 120px;
+    height: 58px;
+    
+}
+
+.nav{
+ 
+ grid-area: nav;
+ 
+ 
+
+ /*Flex*/
+ display: flex;
+ width: 1349;
+ height: 63px;
+ background-color: black;
+ align-items: center;
+ justify-content: flex-start;
+ 
+}
+
+.ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+.li{
+    text-decoration: none;
+    margin: 0px 30px;
+    text-decoration: none;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.li a:hover{
+    color: rgb(207, 188, 188);
+}
+
+
+/*MAIN*/
+.main{
+    background-image: url(../img/background2.jpg);
+    grid-area: main;
+
+}
+
+.cuadrotext1{
+    color: white;
+    margin: 90px 60px;
+    padding: 0px;
+    width: 400px;
+    height: 200px;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+  
+  
+
+
+
+.button{
+    
+    background-color: red;
+    color: white;
+    margin: 20px 0px;
+    padding: 14px 25px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   border: none;
+   border-radius: 12px;
+   font-family: 'Open Sans', sans-serif;
+  }
+
+
+  
+
+
+/*GENERAL*/
+
+
+
+.general{
+    background-color:black;
+    grid-area:general;
+    color: white;
+}
+
+.texto2{
+    text-align: center;
+    margin: 70px auto ;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*CONTENEDORES*/
+
+
+.row {
+    background-color:black;
+    grid-area:row;
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+    
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 40px;
+    background-color:black;
+    padding: 40px;
+  }
+  
+  .row > div{
+    background-color:black;
+   text-align: center;
+    padding: 20px 0;
+    
+  }
+
+
+
+
+
+/*FOOTER*/
+
+.foot{
+    background-color: black;
+    grid-area: foot;
+}
+
+.foot1{
+    display: block;
+    background-color: black;
+    text-decoration: none;
+    margin: 0px;
+    padding: 50px;
+}
+
+.footer2{
+    display: inline;
+}
+
+
+.ftext{
+   
+    color: #808080;
+    font-family: 'Open Sans', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    
+  
+}
+
+.ulfoot{
+    list-style-type: none;
+  /*margin: 0 px;
+  padding: 25px;*/
+}
+
+.footer2 .ftext{
+    /*display: inline-block;*/
+  padding: 20px;
+  
+}
+
+
+@media screen and (max-width: 360px) {
+
+
+    /*CONTENEDOR*/
+
+ 
+  .principal{
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: 0.4fr 380px auto auto 0.4fr;
+      grid-template-areas: 
+      "nav"
+      "main"
+      "general"
+      "row"
+      "foot";
+  }  
+
+/*NAV*/  
+
+.nav{
+ 
+    grid-area: nav;
+   
+    /*Flex*/
+    display: flex;
+  
+    background-color: black;
+    align-items: center;
+    justify-content: flex-start;
+   }
+   
+  
+
+/*MAIN*/
+  
+
+
+  .cuadrotext1{
+    color: white;
+    margin-top: auto;
+    
+ 
+    
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+   display: block;
+    
+}
+
+
+
+.button{
+    
+    background-color: red;
+    color: white;
+    margin: 5px 0px;
+    padding: 14px 25px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   border: none;
+   border-radius: 12px;
+   font-family: 'Open Sans', sans-serif;
+  }
+
+/*GENERAL*/
+
+.general{
+    background-color:black;
+    grid-area:general;
+    color: white;
+    
+}
+
+.texto2{
+    text-align: center;
+    margin: 50px ;
+}
+
+
+
+
+/*CONTENEDORES*/
+
+
+.row {
+    background-color:black;
+    grid-area:row;
+    color:white;
+    
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px;
+    background-color:black;
+    padding: 40px;
+  }
+  
+  .row > div{
+    background-color:black;
+   text-align: center;
+    padding: 20px 0;
+    
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
+

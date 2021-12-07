@@ -1,0 +1,319 @@
+/*CONTENEDOR GENERAL*/
+/*GRID PLANES*/
+/*Reseteo CSS*/
+
+*{
+
+    margin: 0;
+  
+    padding: 0;
+  
+    box-sizing: border-box;
+  
+  }
+
+.principal{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: auto;
+    grid-gap: 0.7px;
+    margin: 0px;
+    grid-template-rows: 63px 63px  auto 70px;
+    grid-template-areas: 
+    "nav " 
+    "sec"
+    "main"
+    "foot";
+
+}
+
+/*NAVBAR*/
+
+.nav{
+    background-color: yellowgreen;
+    grid-area: nav;
+}
+
+
+.logo{
+    width: 120px;
+    height: 58px;
+    
+}
+
+.nav{
+ 
+ grid-area: nav;
+ 
+ 
+
+ /*Flex*/
+ display: flex;
+ width: 1349;
+ height: 63px;
+ background-color: black;
+ align-items: center;
+ justify-content: flex-start;
+}
+
+.ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+.li{
+    text-decoration: none;
+    margin: 0px 30px;
+    text-decoration: none;
+    color: white;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.li a:hover{
+    color: rgb(207, 188, 188);
+}
+
+
+
+
+
+/*SECTION*/
+.sec{
+    background-color: white;
+    grid-area: sec;
+    font-family: 'Open Sans', sans-serif;
+    
+    
+}
+
+.Seleccion{
+    margin: 20px;
+    
+}
+
+
+/*MAIN*/
+.main{
+    background-color: white;
+    grid-area: main;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.maintable{
+    margin: 20px;
+}
+
+/*Tabla*/
+
+#tabla{
+    
+    border-collapse: collapse;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+#tabla td, #tabla th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+
+ 
+  #tabla th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #16201c;
+    color: white;
+  }
+
+  #tabla td {
+    text-align: center;
+
+  }
+
+  tr:hover {background-color: yellow;}
+
+
+/*FOOTER*/
+
+
+.foot{
+    background-color: black;
+    grid-area: foot;
+}
+
+.foot1{
+    display: block;
+    background-color: black;
+    text-decoration: none;
+    margin: 0px;
+    padding: 50px;
+}
+
+.footer2{
+    display: inline;
+}
+
+
+.ftext{
+   
+    color: #808080;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    
+  
+}
+
+.ulfoot{
+    list-style-type: none;
+  /*margin: 0 px;
+  padding: 25px;*/
+}
+
+.footer2 .ftext{
+    /*display: inline-block;*/
+  padding: 20px;
+  
+}
+
+
+
+
+
+@media screen and (max-width: 360px){
+
+
+    /*CONTENEDOR*/
+
+    .principal{
+        display: grid;
+        height: 100%;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 59px auto auto ;
+        grid-template-areas: 
+        "nav"
+        "sec"
+        "main"
+        "foot";
+    }  
+  
+  /*NAV*/  
+
+  
+
+  .logo{
+      width: 140px;
+      height: 95px;
+      margin-top: 12px;
+  }
+  
+  .nav{
+   
+      grid-area: nav;
+      background-color:black;
+
+      display: flex;
+      width: auto;
+      height: 112px;
+     }
+
+    .li{
+        color: blanchedalmond;
+    }
+     
+    a{
+        color: blanchedalmond;
+        /*FONT*/
+        font-size: 23px;
+        
+    }
+    /*SECTION*/ 
+
+    .sec{
+        grid-area: sec;
+        background-color: white;
+        /*FONT*/
+        
+       
+    
+    }
+
+    #select-country{
+        
+    }
+
+    /*MAIN*/
+
+    .main{
+        grid-area: main;
+        background-color:white;
+       /*FONT*/
+       
+    }
+
+    p{
+        text-align: justify;
+    }
+
+    /*TABLA*/
+
+
+    /*FOOTER*/
+   
+
+    .foot{
+        background-color: black;
+        grid-area: foot;
+    }
+    
+    .foot1{
+        display: block;
+        background-color: black;
+        text-decoration: none;
+        margin: 0px;
+        padding: 50px;
+    }
+    
+    .footer2{
+        display: inline;
+    }
+    
+    
+    .ftext{
+       
+        color: #808080;
+        list-style-type: none;
+        text-decoration: none;
+       
+        
+      
+    }
+    
+    .ulfoot{
+        list-style-type: none;
+      /*margin: 0 px;
+      padding: 25px;*/
+    }
+    
+    .footer2 .ftext{
+        /*display: inline-block;*/
+      padding: 20px;
+      
+    }
+    
+
+
+
+
+}
